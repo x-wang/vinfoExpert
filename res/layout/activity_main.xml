@@ -1,31 +1,44 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
   android:layout_height="wrap_content"
-  android:stretchColumns="1"
-> <TableRow>
-    <TextView android:text="User Name:" />
-    <EditText android:id="@+id/user" />
-  </TableRow>
+  android:stretchColumns="1"> 
+  
   <TableRow>
-    <TextView android:text="Password:" />
-    <EditText android:id="@+id/password"
-      android:password="true"
-    />
-  </TableRow>
-  <TableRow>
-    <TextView android:text="Status:" />
-    <EditText android:id="@+id/status"
+    <TextView android:text="Report:" />
+    <EditText android:id="@+id/report"
       android:singleLine="false"
       android:gravity="top"
       android:lines="5"
-      android:scrollHorizontally="false"
+      android:scrollHorizontally="true"
       android:maxLines="5"
       android:maxWidth="200sp"
     />
   </TableRow>
-  <Button android:id="@+id/send"
+  
+  <Button android:id="@+id/accident"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="Send"
+    android:text="Accident"
   />
+    
+  <Button android:id="@+id/condition"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Road Condition"
+  />
+  
+    
+  <Button android:id="@+id/control"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Control"
+  />
+    
+  <Button android:id="@+id/operation"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Operation" 
+  />
+  <!-- ToDo: cant see clear from ui design-->
+  
 </TableLayout>

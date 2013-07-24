@@ -36,10 +36,18 @@ public class MainActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState); 
 		setContentView(R.layout.activity_main);
-		user=(EditText)findViewById(R.id.user); 
-		password=(EditText)findViewById(R.id.password); status=(EditText)findViewById(R.id.status);
-		Button send=(Button)findViewById(R.id.send);
-		send.setOnClickListener(onSend);
+//		user=(EditText)findViewById(R.id.user); 
+//		password=(EditText)findViewById(R.id.password); status=(EditText)findViewById(R.id.status);
+		Button accident=(Button)findViewById(R.id.accident);
+		Button condition=(Button)findViewById(R.id.condition);
+		Button control=(Button)findViewById(R.id.control);
+		Button operation=(Button)findViewById(R.id.operation);
+
+		accident.setOnClickListener(onSend);
+		condition.setOnClickListener(onSend);
+		control.setOnClickListener(onSend);
+		operation.setOnClickListener(onSend);
+		
 		client=new DefaultHttpClient(); 
 	}
 	
